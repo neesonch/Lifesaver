@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+		*	Author:	CORMAC NEESON
+		*	Assignment:	Minor	Project	– Life Saver (Team MAC)
+		*	Student	ID:	D13122673
+		*	Date	:	2015/01/25
+		-->
+		<meta charset = "utf-8"/>
+		<!-- This tag sets viewport to device width; this is expected default behaviour, but without this tag the site renders fully zoomed out on mobiles and cannot be resized by user, rendering content nearly unreadable. Solution found at http://dbushell.com/ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Slideshow plugin style - see script tag below for reference -->
+		<style>
+			/* Prevents slides from flashing */
+			#slides {
+			  display:none;
+		</style>
+		<!-- Bootstrap CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<!--jQuery CDN link -->
+		<script src = "//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="assets/scripts/bootstrap.min.js" defer></script>
+		<!-- SlidesJS - see below for reference -->
+		<script src = "assets/scripts/jquery.slides.min.js"></script>
+		<link rel = "stylesheet" type ="text/css" href ="assets/css/font-awesome.min.css" />
+		<!-- Our CSS -->
+		<link rel = "stylesheet" type ="text/css" href ="assets/css/master-style.css" />
+		<!-- Reused code -->
+		<!-- Ref: http://www.slidesjs.com/ -->
+		<script>
+			$(function(){
+			  $("#slideshow").slidesjs({
+				width: 150,
+				height: 50,
+				navigation: {active: false, effect:"fade"},
+				pagination: {active:false},
+				play: {active:false, effect:"fade"}
+			  });
+			});
+		</script>
+		
+	</head>
+	
+	<body>
+	<div id = "container" class ="container-fluid">
+		<header>
+		
+		<div class ="row">
+			<a href="index.html"><img id ="logo" src ="assets/images/applogo.png" alt ="Site logo" /></a>
+
+			<!-- Reused Code -->
+			<!--Ref: Twitter Bootstrap (http://getbootstrap.com/components/) -->
+			<nav class="navbar navbar-fluid center">
+			
+			<!-- Toggle navigation on small-screen -->
+			<button type ="button" class ="navbar-toggle collapsed" data-toggle ="collapse" data-target ="#nav-columns">
+			<span class ="sr-only">Toggle navigation</span>
+			<span class="glyphicon glyphicon-list"></span>
+			</button>
+			
+			<div class ="collapse navbar-collapse navbar-inner" id ="nav-columns">
+				<ul class ="nav navbar-nav">
+					<li class="active"><a href ="index.html">Home</a></li>
+					<li><a href ="about.html">About</a></li>
+					<li class ="dropdown"><a href ="" class = "dropdown-toggle" data-toggle ="dropdown" role ="button" aria-expanded="false">
+						Demo<span class="caret"></span></a>
+						<ul class ="dropdown-menu" role ="menu">
+							<li><a href="panic-button.html">Panic Button</a></li>
+							<li><a href="first-aid.html">First Aid Instructions</a></li>
+							<li><a href="medical-map.html">Medical Map</a></li>
+						</ul>
+					</li>
+					<li><a href ="blog.html">Blog</a></li>
+					<li><a href ="contact.html">Contact</a></li>
+				</ul>
+			</div>
+
+			</nav>
+			
+		</div>
+		
+		<div class ="row">
+			<div class ="col-md-12">
+			<!-- SlidesJS code - reference in header -->
+			<div id="slideshow">
+				<img src ="assets/images/lifesaver-wrist.jpg"/>
+				<img src ="assets/images/emergency-button-banner.jpg"/>
+				<a href="#" class="slidesjs-previous slidesjs-navigation"><span class="icon-chevron-left icon-large"></span></a>
+				<a href="#" class="slidesjs-next slidesjs-navigation"><span class="icon-chevron-right icon-large" ></span></a>
+			</div>
+			</div>
+		</div>
+		</header>
+			
+		<div id = "copy" class ="row">
+			<div class = "col-md-4">
+			<div class ="content-padding">
+			<div class ="feature">
+			<a href="panic-button.html"><h4>Emergency Button</h4></a>
+			<p>The Life Saver Emergency Button App, enables everyone with a smartphone or tablet, to report a emergency life threatening incident to the Emergency services in an instant. </p>
+			
+			<p>If you come across a person collapsed with what looks like a heart attack, you can, in a heartbeat, alert paramedics to your exact location at the touch of our Life Saver Emergency button.</p>
+			</div>
+			</div>
+			</div>
+			
+			<div class = "col-md-4">
+			<div class ="content-padding">
+			<div class ="feature">
+			<a href="first-aid.html"><h4>First Aid Instructions</h4></a>
+			<p>The Life Saver Emergency Button App, empowers you with simple basic first aid instructions, to make a broad diagnosis of the patient presenting with a problem. Our simple text and video instructions, enable you to make preliminary assessments of most emergency events, in order for you to respond appropriately and communicate your findings to medical professionals in real time.</p>
+			</div>
+			</div>
+			</div>
+				
+			<div class = "col-md-4">
+			<div class ="content-padding">
+			<div class ="feature">
+			<a href="medical-map.html"><h4>Medical Map</h4></a>
+			<p>In addition to pinpointing the incident's exact location to within two metres, our Life Saver Emergency Button app map will show marked locations of the nearest Automated Emergency Defibrillators in relation to your position.</p>
+			</div>
+			</div>
+			</div>
+		</div>
+			
+		<div id ="download-links">
+			<a href ="https://play.google.com/store?hl=en"><img src = "assets/images/google_play.png" alt ="Google Play logo"/></a>
+			<a href ="https://itunes.apple.com/ie/genre/ios/id36?mt=8"><img src = "assets/images/ios_link.png" alt ="App Store logo" /></a>
+		</div>
+				
+		<div id="footer">
+			<div id="social-media">
+			<div class ="row">
+				<!-- Logos downloaded from http://designdeck.co.uk/ -->
+				<div class="col-md-3 col-md-offset-9">
+				<a href ="http://www.facebook.com"><img src ="assets/images/sm_facebook.png" alt ="Facebook logo" /></a>
+				<a href ="http://www.youtube.com"><img src ="assets/images/sm_youtube.png" alt ="Youtube logo" /></a>
+				<a href ="http://www.twitter.com"><img src ="assets/images/sm_twitter.png" alt ="Twitter logo" /></a>
+				<a href ="http://www.rss.com"><img src ="assets/images/sm_rss.png" alt ="RSS logo" /></a>
+				<a href ="http://plus.google.com"><img src ="assets/images/sm_google+.png" alt ="Google+ logo" /></a>
+				</div>
+			</div>
+			</div>
+			<small>Copyright: MAC, 2015</small>
+		</div>
+	</div>
+	</body>
+</html>

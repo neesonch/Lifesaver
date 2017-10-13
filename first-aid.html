@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+		*	Author:	CORMAC NEESON
+		*	Assignment:	Minor	Project	– Life Saver (Team MAC)
+		*	Student	ID:	D13122673
+		*	Date	:	2015/01/25
+		-->
+		<meta charset = "utf-8"/>
+		<!-- This tag sets viewport to device width; this is expected default behaviour, but without this tag the site renders fully zoomed out on mobiles and cannot be resized by user, rendering content nearly unreadable. Solution found at http://dbushell.com/ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<!--jQuery CDN link -->
+		<script src = "//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="assets/scripts/bootstrap.min.js" defer></script>
+		<link rel = "stylesheet" type ="text/css" href ="assets/css/font-awesome.min.css" />
+		<!-- Our CSS -->
+		<link rel = "stylesheet" type ="text/css" href ="assets/css/master-style.css" />
+		<!-- JS file to close open detail sections when another is clicked -->
+		<script src="assets/scripts/close-details.js" defer></script>
+		
+	</head>
+	
+	<body>
+	<div id = "container" class ="container-fluid">
+		<header>
+		
+		<div class ="row">
+			<a href="index.html"><img id ="logo" src ="assets/images/applogo.png" alt ="Site logo" /></a>
+
+			<!-- Reused Code -->
+			<!--Ref: Twitter Bootstrap (http://getbootstrap.com/components/) -->
+			<nav class="navbar navbar-fluid center">
+			
+			<!-- Toggle navigation on small-screen -->
+			<button type ="button" class ="navbar-toggle collapsed" data-toggle ="collapse" data-target ="#nav-columns">
+			<span class ="sr-only">Toggle navigation</span>
+			<span class="glyphicon glyphicon-list"></span>
+			</button>
+			
+			<div class ="collapse navbar-collapse navbar-inner" id ="nav-columns">
+				<ul class ="nav navbar-nav">
+					<li class="active"><a href ="index.html">Home</a></li>
+					<li><a href ="about.html">About</a></li>
+					<li class ="dropdown"><a href ="" class = "dropdown-toggle" data-toggle ="dropdown" role ="button" aria-expanded="false">
+						Demo<span class="caret"></span></a>
+						<ul class ="dropdown-menu" role ="menu">
+							<li><a href="panic-button.html">Panic Button</a></li>
+							<li><a href="first-aid.html">First Aid Instructions</a></li>
+							<li><a href="medical-map.html">Medical Map</a></li>
+						</ul>
+					</li>
+					<li><a href ="blog.html">Blog</a></li>
+					<li><a href ="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<div class="page-title">
+		<h1> First Aid Demo </h1>
+	</div>
+	
+	<div class ="demo-description">
+	<p> Open the First Aid section of the app</p>
+	<p> Click on the relevant emergency situation </p>
+	<p> Follow the drop-down instructions </p>
+	</div>
+	
+	<div id ="first-aid-content">
+		<!-- Reused code -->
+		<!-- Ref: David Lewis -->
+		<details>
+		<summary> CPR </summary>
+			<div class = "dropdown-content">
+				<h4>How you can help</h4>
+				<ol class="first-aid"><li>Call 999 for an ambulance. </li>
+										<li>If the victim is not breathing normally, coughing or moving, begin chest compressions.  Push down in the center of the chest 2 inches 30 times. Pump hard and fast at the rate of at least 100/minute, faster than once per second</li>
+										<li>Tilt the head back and lift the chin. Pinch nose and cover the mouth with yours and blow until you see the chest rise. Give 2 breaths.  Each breath should take 1 second.</li>
+										<li>Repeat cycle of 30 pumps and 2 breaths until help arrives.</li>
+				</ol>
+			<iframe class ="video"  
+				src="//www.youtube.com/embed/AGznNGtT4xw" allowfullscreen> <!--Replaced following attributes using CSS: width="420" height="315"-->
+			</iframe>
+		</div>
+		</details>
+		
+		<details>
+		<summary> Stroke </summary>
+		<div class = "dropdown-content">
+			<h4>Symptoms and signs – Not all may be present</h4>
+				<ul class="first-aid"><li>Tingling, weakness or numbness down one side of the body</li>
+					<li>Loss of muscle tone of the face muscles, with dribbling from one side</li>
+					<li>Blurred or double vision</li>
+					<li>Nausea</li>
+					<li>Loss of bladder or bowel control</li>
+					<li>Loss of speech or the uttering of meaningless sounds</li>
+					<li>Loss of balance and coordination</li>
+					<li>Deteriorating conscious state or unconsciousness</li>
+					<li>Headache</li>
+				</ul>
+			<h4>How you can help</h4>
+				<ol class="first-aid">
+					<li><strong>Assess the patient’s level of consciousness</strong>
+						<br> If unconscious and breathing normally, or if not fully alert, place the patient on their side in a supported position.</li>
+					<li><strong>Call 999 for an ambulance.</strong>
+						<br> It is important for the patient to be assessed as soon as possible because treatment must be started within 1 to 2 hours if a clot is present in the brain.</li>
+					<li><strong>Care for a conscious patient</strong>
+						<br> Assist a conscious patient into the position of greatest comfort. Cover the patient to reduce heat loss.</li>
+					<li><strong>Observe the patient </strong>
+						<br> While waiting for the ambulance to arrive, observe the patient closely for any change in condition. If there is any deterioration in the patient’s conscious state, turn the patient on their side in a supported position.</li>
+				</ol>
+				<p>Although the experience of suffering a stroke is very frightening for the patient, if prompt medical treatment is given followed by rehabilitation therapy over a period of time, improvement is achievable for many.</p>
+			<iframe class ="video"  
+				src="//www.youtube.com/embed/a9SRb1B_GW4" allowfullscreen>
+			</iframe>
+		</div>
+		</details>
+		
+		<details>
+		<summary> Choking </summary>
+		<div class = "dropdown-content">
+			<p>True choking is when a person is unable to breathe or speak due to a complete obstruction in the throat or windpipe.</p>
+			<h4>Symptoms and signs – Not all may be present</h4>
+			<ul class="first-aid"><li><strong>Partial airway obstruction:</strong>
+									<ul class="first-aid"><li>Breathing laboured, gasping or noisy</li>
+										<li>Some air escaping from the mouth</li>
+										<li>Patient coughing or making a ‘crowing’ noise</li>
+										<li>Extreme anxiety or agitation</li>
+										<li>Pale or blueish skin colour</li>
+										</ul>
+									</li>
+								<li><strong>Total airway obstruction:</strong>
+									<ul class="first-aid"><li>Patient unable to effectively cough, breathe or speak, with no air movement</li>
+										<li>Patient making obvious efforts to breathe with in-drawing of spaces between the ribs and above the collarbones</li>
+										<li>Patient’s face is greyish in colour with blue lips due to lack of oxygen</li>
+										<li>Patient clutching the throat with both hands (the universal sign for choking)</li>
+										</ul>
+									</li>
+			</ul>
+			<h4>How you can help</h4>
+			<ul class="first-aid"><li><strong>Partial airway obstruction:</strong>
+									<ol class="first-aid"><li>Never use back blows on a person who is able to cough effectively or breathe. </li>
+										<li>Ask the patient ‘Are you choking?’ to determine whether their airway is completely blocked.</li>
+										<li>Reassure and encourage the patient</li>
+										<li>Stay with the patient until full recovery has occurred.</li>
+										<li>Encourage the patient to cough and expel the foreign body.</li>
+										<li>If the obstruction is not relieved – call 999 for  an ambulance.</li>
+									</ol>
+									</li>
+									<li><strong>Total airway obstruction</strong>
+									<ol class="first-aid"><li>Call 999 for an ambulance. </li>
+										<li><strong>If patient is conscious, give up to 5 back blows:</strong>
+											<br> - With an adult or child, standing or sitting (and leaning forward), and using the heel of one hand, give the back blows between the patient’s shoulder blades. 
+											<br> - If patient is baby, place face down on your lap for the back blows. Ensure you support the baby’s head. Give firm but gentle back blows to avoid physical injury to the baby.
+											<br> - If patient is conscious, give up to 5 back blows.
+										</li>
+										<li><strong>If unsuccessful, give up to 5 chest thrusts:</strong>
+											<br> - With an adult or child, standing or sitting, wrap both arms around the patient, at chest level. 
+											<br> - Place one fist with the thumb side against the middle of the breastbone. 
+											<br> - Grasp that fist with your other hand and give up to 5, separate, inward and upward thrusts.
+											<br> - Continue the thrusts until the obstruction is dislodged or the patient becomes unconscious.
+											<br> - Place a baby face upwards across your lap and give up to 5 sharp chest thrusts just below the nipple line.
+										<br><br><p> The chest thrusts are given separately with a check after each one to see if the obstruction has been relieved. Note: A small child can also be positioned across your lap.</p>
+										</li>
+										<li><strong>If the obstruction has not been relieved:</strong>
+											<br> Continue by alternating back blows and chest thrusts until the ambulance arrives.
+										</li>
+									</ol>
+									</li>
+									<li><strong>Total airway obstruction</strong>
+										<ol class="first-aid"><li>Call 999 for an ambulance. </li>
+										<li>Quickly check the mouth; Use your fingers to remove any obstruction. </li>
+										<li>Begin CPR and continue until ambulance arrives. There may be some resistance to inflations at first until the object has been dislodged.</li>
+									</ol>
+									</li>
+			</ul>
+			<iframe class ="video"  
+				src="//www.youtube.com/embed/Wuo893OC0yE" allowfullscreen>
+			</iframe>
+		</div>
+		</details>
+		
+		<details>
+		<summary> Heart Attack </summary>
+		<div class = "dropdown-content">
+			<p>The severity of the attack depends on the location of the blockage: a small blood vessel will cause chest pain and other symptoms, but the patient should recover after medical treatment. Blockage of a major blood vessel can lead to the heart stopping (cardiac arrest) and the need for CPR.</p>
+			<h4>How you can help</h4>
+				<ol class="first-aid">
+					<li><strong>Assist the patient to rest</strong>
+						<br> Help the conscious patient to rest in the position of greatest comfort, generally in a half-sitting position with support for the back and head. If outdoors with no chair readily available, kneel behind the patient to provide support while completing an initial assessment.</li>
+					<li><strong>If the patient is unconscious or not responding, call for an ambulance. The patient may require CPR</strong></li>
+					<li><strong>Unless the pain eases totally with the prescribed medication – call for an ambulance.
+						When in doubt, always send for an ambulance in case collapse suddenly occurs.</strong>
+						<br>Avoid giving any food, fluids or stimulants such as alcohol, cigarettes, tea or coffee.</li>
+					<li><strong>Try to keep the patient calm</strong>
+						<br>Try to keep the patient calm with constant reassurance because any stress or activity could cause complications or even collapse.Loosen any tight clothing at the neck and waist to assist breathing. Never transport a patient with chest pain in a car. Additional exertion could cause the heart to suffer more damage. Deterioration of the patient in a vehicle is very difficult to manage.</li>
+				</ol>
+			<iframe class ="video"  
+				src="//www.youtube.com/embed/1qje-XlNowI" allowfullscreen>
+			</iframe>
+		</div>
+		</details>
+		<!-- End reused code-->
+	</div>
+	
+	<div id ="download-links">
+		<a href ="https://play.google.com/store?hl=en"><img src = "assets/images/google_play.png" alt ="Google Play logo"/></a>
+		<a href ="https://itunes.apple.com/ie/genre/ios/id36?mt=8"><img src = "assets/images/ios_link.png" alt ="App Store logo" /></a>
+	</div>
+	
+	<div id="footer">
+			<div id="social-media">
+			<div class ="row">
+				<!-- Logos downloaded from http://designdeck.co.uk/ -->
+				<div class="col-md-3 col-md-offset-9">
+				<a href ="http://www.facebook.com"><img src ="assets/images/sm_facebook.png" alt ="Facebook logo" /></a>
+				<a href ="http://www.youtube.com"><img src ="assets/images/sm_youtube.png" alt ="Youtube logo" /></a>
+				<a href ="http://www.twitter.com"><img src ="assets/images/sm_twitter.png" alt ="Twitter logo" /></a>
+				<a href ="http://www.rss.com"><img src ="assets/images/sm_rss.png" alt ="RSS logo" /></a>
+				<a href ="http://plus.google.com"><img src ="assets/images/sm_google+.png" alt ="Google+ logo" /></a>
+				</div>
+			</div>
+			</div>
+			<small>Copyright: MAC, 2015</small>
+		</div>
+	</div>
+	</body>
+</html>

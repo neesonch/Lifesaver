@@ -1,0 +1,491 @@
+/*
+*	Author:	CORMAC NEESON
+*	Assignment:	Minor	Project	– Life Saver (Team MAC)
+*	Student	ID:	D13122673
+*	Date	:	2015/01/25
+*/
+
+
+html, body {
+	width: 100%;
+	margin: 0.5% 0;
+	}
+
+div#container {
+	margin: 0% 5%;
+	width: 90%;
+	border: 1px solid black;
+	overflow: hidden;
+	}
+	
+div#slideshow {
+	width: 90%;
+	margin: 0% 5%;
+	text-align: center;
+	}
+
+div#nav-columns {
+	}
+	
+
+div#copy {
+	width: 100%;
+	margin: 3% auto;
+	text-align: center;
+	}
+	
+div.feature, div.team-profiles, div.demo-description {
+	/*display: inline-block;*/
+	/*max-width: 25%;*/
+	max-height: 150px;
+	overflow-y: scroll;
+	text-align: left;
+	border: 2px solid red;
+	padding: 1% 1%;
+	}
+	
+div.feature a {
+	color: red;
+	}
+	
+div.team-profiles { 
+	max-height: 250px;
+	width: 100%;
+	margin: 2%;
+	display: block;
+	}
+	
+@media screen and (max-width: 768px) {
+	div.team-profiles { 
+		margin-left: 0%;
+		}
+	}
+	
+div.team-profiles img {
+	max-width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid black;
+	padding:0%;
+	display: block;
+	}
+	
+div.content-padding {
+	padding: 2% 0;
+	}
+	
+#nav-columns {
+	padding-right: 0;
+	}
+
+nav {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	/*background-color: blue;*/  /*DEBUG*/
+	}
+	
+nav ul {
+	text-align: center;
+	}
+	
+	
+.navbar.center .navbar-inner {
+    text-align: center;
+	}
+.navbar.center .navbar-inner .nav {
+    float: none;
+    display:inline-block;
+	}
+	
+ul li {
+	display: inline;
+	border-right: 1px solid red;
+	}
+
+ul.dropdown-menu li {	
+	border-right:none;
+	}
+	
+@media screen and (min-width: 768px) {
+	ul.nav li:last-child {
+		border-right: none;
+		padding-right: 0;
+		}
+	}
+	
+	
+nav a {
+	color: red;
+	font-size: 20px;
+	padding: 0% 1%;
+	}
+	
+ul.dropdown-menu a {
+	color: red;
+	font-size: 16px;
+	}
+	
+	
+a.slidesjs-navigation {
+	color: red;
+	text-decoration: none;
+	}
+	
+img#logo {
+	width: 25%;
+	padding-left: 5%;
+	display: inline-block;
+	}
+	
+@media screen and (max-width: 768px) {
+	img#logo {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}
+
+div#download-links {
+	min-width: 100%;
+	text-align: center;
+	}
+
+div#download-links img {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3% 8%;
+	display: inline-block;
+	}
+	
+div#footer {
+	color: white;
+	background-color: red;
+	width: 90%;
+	padding: 15px;
+	position: absolute;
+	left: 5%;
+	clear: both;
+	}
+
+div#social-media {
+	width: 100%
+	}
+	
+div#footer a {
+	text-decoration: none;
+}
+
+div#contact-form form {
+	width: 50%;
+	max-width: 100%;
+	/*background-color: red;  /*DEBUG*/
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	}
+		
+div#contact-form table {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	}
+	
+input, textarea {
+	max-width: 100%;
+	}
+	
+@media screen and (max-width: 768px) {
+	input, textarea {
+		max-width: 100%;
+		float: left;
+		}
+		
+	div#contact-form {
+		width: 100%;
+		margin-left: 5%;
+		}
+		
+	div#contact-form form {
+		width: 100%;
+		}
+	}
+	
+	
+div.page-title {
+	text-align: center;
+	width: 90%;
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+div.contact-details div {
+	border: 2px solid red;
+	margin: 1% 1%;
+	padding: 1%;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+@media screen and (max-width: 768px) {
+	div.contact-details div {
+		width: 80%;
+		}
+	}
+
+div.img-frame {
+	width: 100%;
+	background-color: blue;
+	padding: 0%;
+	max-height: 250px;
+	overflow: hidden;
+	display: inline-block;
+	border: 1px solid black;
+	}
+	
+img#group-picture {
+	width:100%;
+	display: inline-block;
+	}
+	
+div#group-info {
+	width:100%;
+	border: 1px solid red;
+	max-height: 250px;
+	overflow-y: scroll;
+	padding: 1%;
+	}
+	
+div#blog-main {
+	width: 66%;
+	margin-left: 0%;
+	float: left;
+	margin-bottom: 5px;
+	max-height: 500px;
+	overflow-y: scroll;
+	}
+	
+div#blog-sidebar {
+	width: 33%;
+	margin-left:66%;
+	}
+	
+nav.sidebar {
+	border: 1px solid black;
+	padding-bottom: 5px;
+	margin: 3px 1%;
+	}
+	
+nav.sidebar a {
+	color: blue;
+	font-size:12px;
+	}
+
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
+	}
+	
+nav.sidebar li {
+	margin-left: 1%;
+	padding: 0% 0%;
+	text-decoration: underline;
+	text-align: left;
+	display: list-item;
+	}
+	
+	
+@media screen and (max-width: 768px) {
+	div#blog-main {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		}
+	
+	div#blog-sidebar {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		}
+
+	}
+	
+img#blog-picture {
+	width: 80%;
+	margin: 2% auto;
+	border: 1px solid black;
+	display: block;
+	}
+
+
+article.blog-post h3, article.blog-post p {
+	border: 1px solid black;
+	margin-bottom: 0px;
+	}
+article.blog-post p {
+	margin-top: 0px;
+	padding: 5px;
+	}
+	
+div.comment {
+	border: 1px dashed blue;
+}
+	
+.clear {
+	clear: both;
+	}
+	
+div#first-aid-content {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+ol.first-aid li, ul.first-aid li {
+	display: list-item;
+	}
+	
+@media screen and (max-width: 768px) {
+	ol.first-aid, ol.first-aid li, ul.first-aid, ul.first-aid li {
+        list-style-position:inside;
+        margin:0;
+        padding:0;
+		}
+		
+	div#first-aid-content {
+		width: 100%;
+		}
+	}
+	
+div.demo-description {
+	width: 75%;
+	margin: 15px auto;
+	text-align: center;
+	}
+	
+details {
+	margin: 5px;
+	}
+	
+div.dropdown-content {
+	border: 1px dotted black;
+	padding: 10px;
+	}
+	
+summary {
+	background-color: red;
+	border: 1px solid black;
+	font-size: 20px;
+	color: white;
+	padding-left: 2%;
+	}
+
+iframe.video {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 420px;
+	height: 315px;
+	}
+	
+	
+div#ipad-demo {
+	width: 55%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	margin-top: 30px;
+	/*background-image: url("../images/ipad-horiz.png");
+	background-size: cover;*/
+	}
+	
+div#map-canvas, div#gmap, iframe#gmap, div#map-canvas-smallscreen {
+	width: 100%;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid black;
+	color: black;
+	position: relative;
+	}
+
+div#gmap-smallscreen, div#map-canvas-smallscreen {
+	display: none;
+	}
+
+	
+img#panic-button {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom:0;
+	left:0;
+	right:0;
+	}
+	
+@media screen and (max-width: 768px) {
+	div#ipad-demo {
+		width: 100%;
+		left: 0;
+		max-height: 400px;
+		}
+		
+	.camera,.marvel-device, .ipad, .silver, .screen {
+		display: none;
+		}
+		
+	div#gmap-smallscreen, div#map-canvas-smallscreen {
+		display: block;
+		}
+		
+	div#gmap-smallscreen img, div#gmap-smallscreen iframe {
+		max-width:100%;
+		max-height: 300px;
+		}
+		
+	iframe.video {
+		width: 100%;
+		}
+	}
+	
+/* --- Bootstrap 5ths expansion, taken from http://stackoverflow.com/questions/10387740/five-equal-columns-in-twitter-bootstrap ---*/	
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 20%;
+    float: left;
+	}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}

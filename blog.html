@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+		*	Author:	CORMAC NEESON
+		*	Assignment:	Minor	Project	– Life Saver (Team MAC)
+		*	Student	ID:	D13122673
+		*	Date	:	2015/01/25
+		-->
+		<meta charset = "utf-8"/>
+		<!-- This tag sets viewport to device width; this is expected default behaviour, but without this tag the site renders fully zoomed out on mobiles and cannot be resized by user, rendering content nearly unreadable. Solution found at http://dbushell.com/ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<!--jQuery CDN link -->
+		<script src = "//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="assets/scripts/bootstrap.min.js" defer></script>
+		<link rel = "stylesheet" type ="text/css" href ="assets/css/font-awesome.min.css" />
+		<!-- Our CSS -->
+		<link rel = "stylesheet" type ="text/css" href ="assets/css/master-style.css" />
+		<!-- Comments JS file -->
+		<script src ="assets/scripts/comments.js" type = "text/javascript" defer></script>
+		
+	</head>
+	
+	<body>
+	<div id = "container" class ="container-fluid">
+		<header>
+		
+		<div class ="row">
+			<a href="index.html"><img id ="logo" src ="assets/images/applogo.png" alt ="Site logo" /></a>
+
+			<!-- Reused Code -->
+			<!--Ref: Twitter Bootstrap (http://getbootstrap.com/components/) -->
+			<nav class="navbar navbar-fluid center">
+			
+			<!-- Toggle navigation on small-screen -->
+			<button type ="button" class ="navbar-toggle collapsed" data-toggle ="collapse" data-target ="#nav-columns">
+			<span class ="sr-only">Toggle navigation</span>
+			<span class="glyphicon glyphicon-list"></span>
+			</button>
+			
+			<div class ="collapse navbar-collapse navbar-inner" id ="nav-columns">
+				<ul class ="nav navbar-nav">
+					<li class="active"><a href ="index.html">Home</a></li>
+					<li><a href ="about.html">About</a></li>
+					<li class ="dropdown"><a href ="" class = "dropdown-toggle" data-toggle ="dropdown" role ="button" aria-expanded="false">
+						Demo<span class="caret"></span></a>
+						<ul class ="dropdown-menu" role ="menu">
+							<li><a href="panic-button.html">Panic Button</a></li>
+							<li><a href="first-aid.html">First Aid Instructions</a></li>
+							<li><a href="medical-map.html">Medical Map</a></li>
+						</ul>
+					</li>
+					<li><a href ="blog.html">Blog</a></li>
+					<li><a href ="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<div class="page-title">
+		<h1> Blog </h1>
+	</div>
+	<div id ="blog-main">
+
+		<img id = "blog-picture" alt ="Man using tablet" src ="assets/images/ipad.png" />
+
+		<article class ="blog-post">
+			<a name ="blog-post-1"></a>
+			<h3>Unique Application?</h3>
+			<p>There is a huge amount of different applications, usually free, usually in each area of activity there is a couple of already existing products. We need to focus on uniqueness and quality level to appear attractive. According to specialized medical websites – there is no need for high amount of this kind of services as few good sources with trusted and well known trade mark can do the job for entire market.
+			<br><br>So again – quality, uniqueness and complexity are key factors here.</p>
+			<div class ="comment-output">
+			
+			</div>
+		
+			<div class="user-comment">
+				<input class ="comment-input" type ="text" placeholder = "Enter comment here!">
+				<button class ="submit-comment" type="button">Submit</button>
+			</div>
+		</article>
+		
+		<article class ="blog-post">
+			<a name ="blog-post-2"></a>
+			<h3>Target Location for Target Audience </h3>
+			<p>Creating an application which allows you to send target location is not a difficult undertaking. Merging this undertaking with a platform that provides medical knowledge and professional advice is however, a bigger challenge.
+			<br><br> The trick is to keep customers engaged, providing constantly proof of trust while creating “alive” environment. Building long lasting and trustworthy relationships with medical personnel is also a key factor in providing up to date and relevant professional advice and support.</p>
+			<div class ="comment-output">
+			
+			</div>
+		
+			<div class="user-comment">
+				<input class ="comment-input" type ="text" placeholder = "Enter comment here!">
+				<button class ="submit-comment" type="button">Submit</button>
+			</div>
+		</article>
+		
+		<article class ="blog-post">
+			<a name ="blog-post-3"></a>
+			<h3>European Union’s Role in Supporting the Tech Revolution</h3>
+			<p>The European Union plays a supporting role for the information and technological revolution. It has created the open European market with fair and unified access for all companies, protection of consumer’s interest and common technical standards.
+			<br><br>The European Union is in a stable situation after exiting recession last year (Ireland exited bailout December 2013). Economic growth and balanced risk will help to stabilise the labour market by slow increase by employment rate. 
+			</p>
+			<div class ="comment-output">
+			
+			</div>
+		
+			<div class="user-comment">
+				<input class ="comment-input" type ="text" placeholder = "Enter comment here!">
+				<button class ="submit-comment" type="button">Submit</button>
+			</div>
+		</article>
+		
+	</div> 
+	
+	<div id ="blog-sidebar">
+		<nav id ="recent-posts" class = "sidebar">
+		<h4>Recent Posts</h4>
+		<ul>
+			<li><a href="#blog-post-1"> Unique Application? </a></li>
+			<li><a href="#blog-post-2"> Target Location for Target Audience  </a></li>
+			<li><a href="#blog-post-3"> European Union’s Role in Supporting the Tech Revolution </a></li>
+		</ul>
+		</nav>
+		
+		<nav id ="recent-comments" class = "sidebar">
+		<h4>Recent Comments</h4>
+		<ul id="comments-list">
+
+		</ul>
+		</nav>
+		
+	</div>
+
+	
+	<div class ="clear"></div>
+	
+	<div id ="download-links">
+		<a href ="https://play.google.com/store?hl=en"><img src = "assets/images/google_play.png" alt ="Google Play logo"/></a>
+		<a href ="https://itunes.apple.com/ie/genre/ios/id36?mt=8"><img src = "assets/images/ios_link.png" alt ="App Store logo" /></a>
+	</div>
+	
+	<div id="footer">
+			<div id="social-media">
+			<div class ="row">
+				<!-- Logos downloaded from http://designdeck.co.uk/ -->
+				<div class="col-md-3 col-md-offset-9">
+				<a href ="http://www.facebook.com"><img src ="assets/images/sm_facebook.png" alt ="Facebook logo" /></a>
+				<a href ="http://www.youtube.com"><img src ="assets/images/sm_youtube.png" alt ="Youtube logo" /></a>
+				<a href ="http://www.twitter.com"><img src ="assets/images/sm_twitter.png" alt ="Twitter logo" /></a>
+				<a href ="http://www.rss.com"><img src ="assets/images/sm_rss.png" alt ="RSS logo" /></a>
+				<a href ="http://plus.google.com"><img src ="assets/images/sm_google+.png" alt ="Google+ logo" /></a>
+				</div>
+			</div>
+			</div>
+			<small>Copyright: MAC, 2015</small>
+	</div>
+	
+	</div>
+	</body>
+</html>

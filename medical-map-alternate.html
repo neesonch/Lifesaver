@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8"/>
+		<!-- This tag sets viewport to device width; this is expected default behaviour, but without this tag the site renders fully zoomed out on mobiles and cannot be resized by user, rendering content nearly unreadable. Solution found at http://dbushell.com/ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<!--jQuery CDN link -->
+		<script src = "//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Bootstrap JS/CSS -->
+		<script src="assets/scripts/bootstrap.min.js" defer></script>
+		<link rel = "stylesheet" type ="text/css" href ="assets/css/font-awesome.min.css" />
+		<!-- Google Maps Javascript API -->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa9wrFQDtahsK5hqvRrivBxA52ZFsqWew"></script>
+		<!-- Custom JS for embedded map -->
+		<script type="text/javascript" src ="assets/scripts/medimap.js"></script>
+		<!-- Our CSS -->
+		<link rel = "stylesheet" type ="text/css" href ="assets/css/master-style.css" />
+		
+	</head>
+	
+	<body>
+	<div id = "container" class ="container-fluid">
+		<header>
+		
+		<div class ="row">
+			<img id ="logo" src ="assets/images/applogo.png" alt ="Site logo" />
+
+			
+			<nav class="navbar navbar-fluid center">
+			
+			<!-- Toggle navigation on small-screen -->
+			<button type ="button" class ="navbar-toggle collapsed" data-toggle ="collapse" data-target ="#nav-columns">
+			<span class ="sr-only">Toggle navigation</span>
+			<span class="glyphicon glyphicon-list"></span>
+			</button>
+			
+			<div class ="collapse navbar-collapse navbar-inner" id ="nav-columns">
+				<ul class ="nav navbar-nav">
+					<li class="active"><a href ="#">Home</a></li>
+					<li><a href ="">About</a></li>
+					<li class ="dropdown"><a href ="" class = "dropdown-toggle" data-toggle ="dropdown" role ="button" aria-expanded="false">
+						Demo<span class="caret"></span></a>
+						<ul class ="dropdown-menu" role ="menu">
+							<li><a href="">Panic Button</a></li>
+							<li><a href="">First Aid Instructions</a></li>
+							<li><a href="">Medical Map</a></li>
+						</ul>
+					</li>
+					<li><a href ="">Blog</a></li>
+					<li><a href ="">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<div id="ipad-demo">
+	<!-- Content goes here -->
+	<div id="map-canvas"></div>
+	</div>
+	
+	
+	
+	<div id ="download-links">
+		<a href ="https://play.google.com/store?hl=en"><img src = "assets/images/google_play.png" alt ="Google Play logo"/></a>
+		<a href ="https://itunes.apple.com/ie/genre/ios/id36?mt=8"><img src = "assets/images/ios_link.png" alt ="App Store logo" /></a>
+	</div>
+	
+	<div id="footer">
+			<div id="social-media">
+			<div class ="row">
+				<!-- Logos downloaded from http://designdeck.co.uk/ -->
+				<div class="col-md-3 col-md-offset-9">
+				<a href ="http://www.facebook.com"><img src ="assets/images/sm_facebook.png" alt ="Facebook logo" /></a>
+				<a href ="http://www.youtube.com"><img src ="assets/images/sm_youtube.png" alt ="Youtube logo" /></a>
+				<a href ="http://www.twitter.com"><img src ="assets/images/sm_twitter.png" alt ="Twitter logo" /></a>
+				<a href ="http://www.rss.com"><img src ="assets/images/sm_rss.png" alt ="RSS logo" /></a>
+				<a href ="http://plus.google.com"><img src ="assets/images/sm_google+.png" alt ="Google+ logo" /></a>
+				</div>
+			</div>
+			</div>
+			<small>Copyright: MAC, 2015</small>
+		</div>
+	</div>
+	</body>
+</html>

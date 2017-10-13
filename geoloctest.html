@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8"/>
+		<script>
+		function myIP() {
+			if (window.XMLHttpRequest) xmlhttp = new XMLHttpRequest();
+			else xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+			xmlhttp.open("GET","http://api.hostip.info/get_json.php",false);
+			xmlhttp.send();
+
+			hostipInfo = xmlhttp.responseText.split("\n");
+
+			for (i=0; hostipInfo.length >= i; i++) {
+				ipAddress = hostipInfo[i].split(":");
+				/*if ( ipAddress[0] == "IP" )*/ return ipAddress;
+			}
+
+			return false;
+		}
+		</script>
+		
+	</head>
+	
+	<body onload ="alert(myIP())"
+	
+	<h1></h1>
+	<p></p>
+	</body>
+</html>
